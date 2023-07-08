@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './myComp/login/login.component';
+import { ForgotPassowrdComponent } from './myComp/forgot-passowrd/forgot-passowrd.component';
+import { NoFoundComponent } from './myComp/no-found/no-found.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'forgot-password', component: ForgotPassowrdComponent },
+  { path: '**', component: NoFoundComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
