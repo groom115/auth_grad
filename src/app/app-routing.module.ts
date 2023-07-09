@@ -7,6 +7,11 @@ import { NoFoundComponent } from './myComp/no-found/no-found.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'forgot-password', component: ForgotPassowrdComponent },
+  {
+    path: 'admin',
+    loadChildren: () =>
+      import('./modules/admin/admin.module').then((m) => m.AdminModule),
+  },
   { path: '**', component: NoFoundComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
