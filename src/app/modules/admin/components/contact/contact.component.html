@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <style>
+      /* Styles for the contact form */
+      .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form-textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form-button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .form-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea
+            class="form-textarea"
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button class="form-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <style>
+      /* Styles for the page container */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Styles for the page content */
+      .content {
+        min-height: calc(
+          100% - 60px
+        ); /* Adjust as needed to accommodate the footer height */
+      }
+
+      /* Styles for the footer */
+      .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        flex-shrink: 0;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+
+      .footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Styles for the page container and footer */
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <!-- Your page content here -->
+      </div>
+
+      <!-- Footer section -->
+      <footer class="footer">
+        <p>
+          &copy; 2023 Your Website. All rights reserved. |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
