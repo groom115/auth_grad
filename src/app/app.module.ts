@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './myComp/login/login.component';
 import { ForgotPassowrdComponent } from './myComp/forgot-passowrd/forgot-passowrd.component';
 import { NoFoundComponent } from './myComp/no-found/no-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ForgotPassowrdComponent,
-    NoFoundComponent
+    NoFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
